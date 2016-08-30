@@ -16,16 +16,16 @@ export class HomePage implements OnInit {
     ngOnInit() {
         if(app.android) {
             this.page.actionBarHidden = true;
-            this.routerExtensions.navigate(["/intervals"]);
+            this.routerExtensions.navigate(["/editprogram"]);
         }
     }
 
     newRun(){
-        this.routerExtensions.navigate(["/intervals"],
+        this.routerExtensions.navigate(["/editprogram"],
             {
                 transition: {
                     name: "slide",
-                    duration: 200,
+                    duration: 400,
                     curve: "linear"
                 }
             });

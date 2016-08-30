@@ -1,13 +1,16 @@
-import {Component, OnInit} from "@angular/core";
+import {Component, OnInit, Input} from "@angular/core";
 import { Page } from "ui/page";
 import app = require("application");
 
 @Component({
-    selector: "my-app",
+    selector: "intervals",
     templateUrl: "pages/intervals/intervals.html",
     styleUrls: ["pages/intervals/intervals.css"]
 })
 export class IntervalPage implements OnInit {
+    @Input()
+        isHidden: Boolean;
+        
     charCodeMinus: string;
     charCodePlus: string;
     walkLength: number;
