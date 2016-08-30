@@ -1,5 +1,5 @@
 .background {
-    background-color: deeppink;
+    background-color: lightsteelblue;
 }
 
 .appHeader {
@@ -10,9 +10,16 @@
 }
 
 .button {
-    width: 100%;
+    width: 75%;
     height: 20%;
-    background-color: grey;
+    background-color: ghostwhite;
     margin-bottom: 5%;
     font-size: 30px;
 }
+
+.icomoon {
+    font-family: "icomoon";
+    font-size: 32px;
+    color: black;
+}
+

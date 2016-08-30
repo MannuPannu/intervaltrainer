@@ -1,7 +1,26 @@
 <StackLayout class="background">
-   <Label class="appHeader" text="Edit interval"></Label>
-   <Label class="appHeader" text="Number of sets"></Label>
-   <Label class="appHeader" text="Work interval"></Label>
-   <Label class="appHeader" text="Rest interval"></Label>
-   <Button text="Add set"></Button>
+   <Label class="appHeader" text="Edit sets"></Label>
+
+   <StackLayout orientation="horizontal" width="100%" height="10%">
+        <Label class="editProperty propertyTitle" text="Walk"></Label>
+        <Label text="{{ charCodeMinus }}" class="icomoon"></Label>
+        <Label class="editProperty" text="{{ walkLength }}"></Label>
+        <Label text="{{ charCodePlus }}" class="icomoon"></Label>
+   </StackLayout>
+
+   <StackLayout orientation="horizontal" width="100%" height="10%">
+        <Label class="editProperty propertyTitle" text="Run"></Label>
+        <Label text="{{ charCodeMinus }}" class="icomoon"></Label>
+        <Label class="editProperty" text="{{ runLength }}"></Label>
+        <Label text="{{ charCodePlus }}" class="icomoon"></Label>
+   </StackLayout>
+
+   <StackLayout orientation="horizontal" width="100%" height="10%">
+        <Label class="editProperty propertyTitle" text="Cycles"></Label>
+        <Label text="{{ charCodeMinus }}" class="icomoon"></Label>
+        <Label class="editProperty" text="{{ cycles }}"></Label>
+        <Label text="{{ charCodePlus }}" class="icomoon"></Label>
+   </StackLayout>
+
+   <Button class="button" text="Add set"></Button>
 </StackLayout>

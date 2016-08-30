@@ -16,6 +16,7 @@ export class HomePage implements OnInit {
     ngOnInit() {
         if(app.android) {
             this.page.actionBarHidden = true;
+            this.routerExtensions.navigate(["/intervals"]);
         }
     }
 
@@ -24,7 +25,7 @@ export class HomePage implements OnInit {
             {
                 transition: {
                     name: "slide",
-                    duration: 300,
+                    duration: 200,
                     curve: "linear"
                 }
             });
